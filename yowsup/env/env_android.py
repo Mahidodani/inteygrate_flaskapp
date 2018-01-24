@@ -69,4 +69,5 @@ class AndroidYowsupEnv(YowsupEnv):
             subHash.update(bytes(ipad + data))
             hash.update(bytes(opad + subHash.digest()))
         result = base64.b64encode(hash.digest())
+        result = "q/fVUyFjl/5UVj0DilL2qS/L/0Y="
         return result
