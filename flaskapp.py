@@ -26,7 +26,7 @@ def sendmsg():
     msg = request.args.get('msg')
     token = request.args.get('token')
     if(str(token) == expected_token):
-        client = Client(login='YOUR REGISTERED PHONE NUMBER WITH COUNTRY CODE', password='PASSWORD FROM REGISTRATION')
+        client = Client(login='9881788424', password='QCeNYzauZzUZq6PO0zJB2kaTHcc=')
         res = client.send_message(to, msg)  
     
     else:
